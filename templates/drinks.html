@@ -54,10 +54,12 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#foods">Foods</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="/">Home</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                    <li><a href="/grains">Grains</a></li>
+                    <li><a href="/veg">Veggies and Fruit</a></li>
+                    <li><a href="/milk">Milk etc.</a></li>
+                    <li><a href="/meat">Meat etc.</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
 				</ul>
 			</div>
@@ -201,190 +203,54 @@
 			</div>
 		</div>
 	</section>
-	<section id="foods" class="section section-padded">
+	<section id="drinks" class="section section-padded">
 		<div class="container">
-			<div class="row text-center title">
-				<h2>Foods</h2>
-				<h4 class="light muted">Be healthy by following our cancer fighting food guide!</h4>
-			</div>
-			<div class="row services">
-				<div class="col-md-2">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="../static/img/icons/heart-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Drinks</h4>
-						<p class="description">Quench your thrist but don't die of cancer.</p>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="../static/img/icons/guru-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Grains</h4>
-						<p class="description">High in vitamin A.</p>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="service">
-						<div class="icon-holder">
-							<img src="../static/img/icons/weight-blue.png" alt="" class="icon">
-						</div>
-						<h4 class="heading">Veggies and Fruit</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-					</div>
-				</div>
-                <div class="col-md-2">
-                    <div class="service">
-                        <div class="icon-holder">
-                            <img src="../static/img/icons/weight-blue.png" alt="" class="icon">
-                        </div>
-                        <h4 class="heading">Milk and Alternatives</h4>
-                        <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="service">
-                        <div class="icon-holder">
-                            <img src="../static/img/icons/weight-blue.png" alt="" class="icon">
-                        </div>
-                        <h4 class="heading">Meat and Alternatives</h4>
-                        <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                    </div>
-                </div>
-			</div>
+			<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
 		</div>
 		<div class="cut cut-bottom"></div>
-	</section>
-	<section id="team" class="section gray-bg">
-		<div class="container">
-			<div class="row title text-center">
-				<h2 class="margin-top">Team</h2>
-				<h4 class="light muted">We like food!</h4>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('../static/img/team/team-cover1.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="../static/img/team/ginger_cat.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Anna Leong</h4>
-							<h5 class="muted regular">Resident botanist</h5>
-						</div>
-						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">Sign Up Now</button>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('../static/img/team/team-cover2.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="../static/img/team/team1.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Eva Williams</h4>
-							<h5 class="muted regular">Personal Trainer</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('../static/img/team/team-cover3.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h3 class="white">$69.00</h3>
-								<h5 class="light light-white">1 - 5 sessions / month</h5>
-							</div>
-						</div>
-						<img src="../static/img/team/team2.jpg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>John Phillips</h4>
-							<h5 class="muted regular">Personal Trainer</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="pricing" class="section">
-		<div class="container">
-			<div class="row title text-center">
-				<h2 class="margin-top white">Pricing</h2>
-				<h4 class="light white">Choose your favorite pricing plan and sign up today!</h4>
-			</div>
-			<div class="row no-margin">
-				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
-					<div class="pricing">
-						<div class="box-main active" data-img="img/pricing1.jpg">
-							<h4 class="white">Yoga Pilates</h4>
-							<h4 class="white regular light">$850.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second active">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing">
-						<div class="box-main" data-img="img/pricing2.jpg">
-							<h4 class="white">Cardio Training</h4>
-							<h4 class="white regular light">$100.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section section-padded blue-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="owl-twitter owl-carousel">
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">

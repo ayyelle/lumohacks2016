@@ -17,6 +17,10 @@ def id_generator(size=10, chars=string.ascii_uppercase + string.digits):
 def hello_world():
     return render_template("index.html");
 
+@app.route('/drinks')
+def hello_drink():
+    return render_template("drinks.html");
+
 
 # @app.route('/add', methods=['POST'])
 # def add():
