@@ -13,9 +13,11 @@ firebase = firebase.FirebaseApplication("""https://lumohacks2016.firebaseio.com/
 def id_generator(size=10, chars=string.ascii_uppercase + string.digits):
 	return ''.join(random.choice(chars) for _ in range(size))
 
+title = "Byte Cancer"
+
 @app.route('/')
 def hello_world():
-    return render_template("index.html");
+    return render_template("index.html", title=title);
 
 
 #@app.route('/drinks')
@@ -24,7 +26,7 @@ def hello_world():
 
 @app.route('/drinks')
 def getDrinks():
-
+	blurb = "Quench your thirst and live long!"
 	return_list = []
 	results = firebase.get('/', None)
 	print(results)
@@ -47,11 +49,11 @@ def getDrinks():
 			count = count +1
 	
 	print (return_list)
-	return render_template("drinks.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list, title = title, type = "Drinks", blurb = blurb);
 
 @app.route('/veg')
 def getVeg():
-
+	blurb = "Eat fresh and stay fresh!"
 	return_list = []
 	results = firebase.get('/', None)
 	print(results)
@@ -74,11 +76,11 @@ def getVeg():
 			count = count +1
 	
 	print (return_list)
-	return render_template("drinks.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list, title = title, type = "Veggies and Fruit", blurb = blurb);
 
 @app.route('/meat')
 def getMeat():
-
+	blurb = "The proteins that keep you going strong!"
 	return_list = []
 	results = firebase.get('/', None)
 	print(results)
@@ -101,14 +103,14 @@ def getMeat():
 			count = count +1
 	
 	print (return_list)
-	return render_template("drinks.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list, title = title, type = "Meat and Alternatives", blurb=blurb);
 			
 	#return render_template("drinks.html",return_list=return_list)
 
 
 @app.route('/grains')
 def getGrains():
-
+	blurb = "So many vitamins here!"
 	return_list = []
 	results = firebase.get('/', None)
 	print(results)
@@ -131,14 +133,14 @@ def getGrains():
 			count = count +1
 	
 	print (return_list)
-	return render_template("drinks.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list, title = title, type = "Grains", blurb=blurb);
 
 			
 	#return render_template("drinks.html",return_list=return_list)
 
 @app.route('/milk')
 def getMilk():
-
+	blurb = "Dairy you need to stay strong!"
 	return_list = []
 	results = firebase.get('/', None)
 	print(results)
@@ -161,7 +163,7 @@ def getMilk():
 			count = count +1
 	
 	print (return_list)
-	return render_template("drinks.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list, title = title, type = "Milk and Alternatives", blurb=blurb);
 
 			
 	#return render_template("drinks.html",return_list=return_list)
