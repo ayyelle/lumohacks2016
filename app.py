@@ -41,7 +41,7 @@ def getDrinks():
 			return_list.append(local_list)
 			count = count +1
 			
-	return redirect('/');
+	return render_template("drinksTest.html",return_list = return_list);
 			
 	#return render_template("drinks.html",return_list=return_list)
 
