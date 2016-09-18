@@ -149,7 +149,7 @@ def getMilk():
 		print (id_test)
 		value = results[id]
 		print(value['type'])
-		if value['type'] == "milk":
+		if value['type'] == "milk_and_alternatives":
 			'''print('hella')'''
 			local_list = []
 			local_list.append(count)
