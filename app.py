@@ -18,11 +18,11 @@ def hello_world():
     return render_template("index.html");
 
 
-@app.route('/drinks')
-def hello_drink():
-    return render_template("drinks.html");
+#@app.route('/drinks')
+#def hello_drink():
+#    return render_template("drinks.html");
 
-@app.route('/getDrinks')
+@app.route('/drinks')
 def getDrinks():
 
 	return_list = []
@@ -45,8 +45,9 @@ def getDrinks():
 			local_list.append(value["info"])
 			return_list.append(local_list)
 			count = count +1
-			
-	return render_template("drinksTest.html",return_list = return_list);
+	
+	print (return_list)
+	return render_template("drinks.html",return_list = return_list);
 			
 	#return render_template("drinks.html",return_list=return_list)
 
