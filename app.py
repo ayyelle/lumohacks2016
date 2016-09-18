@@ -8,8 +8,7 @@ import random
 import string
 
 app = Flask(__name__)
-firebase = firebase.FirebaseApplication("""https://lumohacks2016.firebaseio.com/\
-#-AIzaSyBidM9PIXWyakhgV4gQ7nWh-Qm_xDGTt-8""",None)
+firebase = firebase.FirebaseApplication("https://lumohacks2016.firebaseio.com/#-AIzaSyBidM9PIXWyakhgV4gQ7nWh-Qm_xDGTt-8",None)
 def id_generator(size=10, chars=string.ascii_uppercase + string.digits):
 	return ''.join(random.choice(chars) for _ in range(size))
 
