@@ -131,7 +131,7 @@ def getGrains():
 			count = count +1
 	
 	print (return_list)
-	return render_template("grains.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list);
 
 			
 	#return render_template("drinks.html",return_list=return_list)
@@ -161,7 +161,7 @@ def getMilk():
 			count = count +1
 	
 	print (return_list)
-	return render_template("milk.html",return_list = return_list);
+	return render_template("drinks.html",return_list = return_list);
 
 			
 	#return render_template("drinks.html",return_list=return_list)
