@@ -48,6 +48,60 @@ def getDrinks():
 	
 	print (return_list)
 	return render_template("drinks.html",return_list = return_list);
+
+@app.route('/veg')
+def getVeg():
+
+	return_list = []
+	results = firebase.get('/', None)
+	print(results)
+	count = 1
+	for id in results.keys():
+		print ("here")
+		id_test = id
+		print (id_test)
+		value = results[id]
+		print(value['type'])
+		if value['type'] == "veggies_and_fruit":
+			print('hella')
+			local_list = []
+			local_list.append(count)
+			local_list.append(value['name'])
+			local_list.append(value["type"])
+			local_list.append(value["prevents"])
+			local_list.append(value["info"])
+			return_list.append(local_list)
+			count = count +1
+	
+	print (return_list)
+	return render_template("drinks.html",return_list = return_list);
+
+@app.route('/meat')
+def getMeat():
+
+	return_list = []
+	results = firebase.get('/', None)
+	print(results)
+	count = 1
+	for id in results.keys():
+		print ("here")
+		id_test = id
+		print (id_test)
+		value = results[id]
+		print(value['type'])
+		if value['type'] == "meat_and_alternatives":
+			print('hella')
+			local_list = []
+			local_list.append(count)
+			local_list.append(value['name'])
+			local_list.append(value["type"])
+			local_list.append(value["prevents"])
+			local_list.append(value["info"])
+			return_list.append(local_list)
+			count = count +1
+	
+	print (return_list)
+	return render_template("drinks.html",return_list = return_list);
 			
 	#return render_template("drinks.html",return_list=return_list)
 
