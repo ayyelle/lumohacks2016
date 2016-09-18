@@ -22,19 +22,22 @@ def getDrinks():
 
 	return_list = []
 	results = firebase.get('/', None)
-
+	print(results)
 	count = 1
 	for id in results.keys():
-		print "here"
-		print id
-		if results[id]['type'] == "drink":
+		print ("here")
+		id_test = id
+		print (id_test)
+		value = results[id]
+		print(value['type'])
+		if value['type'] == "drink":
+			print('hella')
 			local_list = []
 			local_list.append(count)
-			local_list.append(results[id]['name'])
-			print (results[id]['name'])
-			local_list.append(results[id]["type"])
-			local_list.append(results[id]["prevents"])
-			local_list.append(results[id]["info"])
+			local_list.append(value['name'])
+			local_list.append(value["type"])
+			local_list.append(value["prevents"])
+			local_list.append(value["info"])
 			return_list.append(local_list)
 			count = count +1
 			
